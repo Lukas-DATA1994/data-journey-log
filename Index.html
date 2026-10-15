@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Journey Log | Dziennik Inżynierii i Analizy Danych</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 1rem;
+            text-align: center;
+            background-color: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .post-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .post-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .post-date {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .post-title {
+            margin: 0.5rem 0;
+            font-size: 1.3rem;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .post-title a:hover {
+            color: var(--accent-color);
+        }
+
+        .post-excerpt {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Data Journey Log</h1>
+        <p>Dokumentacja przejścia do profesjonalnej analizy danych: Excel, Power Query, SQL, Python.</p>
+    </header>
+
+    <main id="posts-container">
+        <!-- Wpis 1 -->
+        <article class="post-card">
+            <div class="post-date">Październik 2026 • Power Query</div>
+            <h2 class="post-title"><a href="#">Jakość danych i nulle w Power Query — dlaczego tutoriale z YT milczą o fundamentach?</a></h2>
+            <p class="post-excerpt">
+                Pierwsze wnioski z lektury „Nowoczesnej analizy w Excelu”. Dlaczego operacje na czystych plikach z kursów wideo niewiele uczą i jak sprawdzanie jakości kolumn zmienia podejście do czyszczenia danych.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Data Journey Log. Built with HTML, CSS & JS on GitHub Pages.</p>
+    </footer>
+
+    <script>
+        // Tutaj w przyszłości dodamy skrypt do dynamicznego ładowania wpisów z plików Markdown!
+        console.log("Data Journey Log initialized.");
+    </script>
+</body>
+</html>
